@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Libre+Baskerville&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.335),rgba(0, 0, 0, 0.226)), url('img/a.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+.logo{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    width: 30%;
+    text-align: center;
+}
+.logo:hover{
+    cursor: pointer;
+    color: #e49f8f;
+    transition: all 0.3s ease;
+}
+ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: wheat; */
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+}
+ul li a{
+    display: inline;
+    font-family: 'Libre Baskerville', serif;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+ul li a:hover{
+    color: #e49f8f;
+    transition: all 0.3s ease;
+}
+.first{
+    color: #e49f8f;
+    transition: all 0.3s ease;
+}
+.first:hover{
+    color: white;
+}
+.fa{
+    margin-right: 4px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 88vh;
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+}
+.container h3{
+    font-size: 32px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 2px black;
+}
+.container h1{
+    font-size: 54px;
+    /* font-weight: bold; */
+    /* text-shadow: top-bottom right-left blur color; */
+    text-shadow: 3px 2px 3px black ;
+    text-transform: uppercase;
+    margin: 20px;
+}
+.change::after{
+    content: '';
+    animation: text 10s infinite linear;
+    color: rgb(3, 156, 156);
+    cursor: pointer;
+}
+@keyframes text {
+    0%{content: 'Hawa-Mahal';}
+    20%{content: 'Amber';}
+    40%{content: 'Ramganj';}
+    60%{content: 'City Palace';}
+    80%{content: 'Albert Hall';}
+    100%{content: 'Johari Bazar';}
+}
+.container p{
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+.container a{
+    text-decoration: none;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    padding: 10px 26px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+}
+.sign{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.sign:hover{
+    background-color: teal;
+    color: white;
+}
+.learn{
+    background-color: teal;
+    color: white;
+    transition: all 0.3s ease;
+}
+.learn:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
